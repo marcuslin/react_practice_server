@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+
+development:
+  <<: *default
+  username:
+  password:
+  database: react_dev
+
+test:
+  <<: *default
+  username:
+  password:
+  database: react_test
